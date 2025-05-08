@@ -27,3 +27,49 @@ rose = Cat("Rose",9,"Siamese Cat")
 rose.play("ball")     
 rose.sleep("couch")       
 rose.sound()
+
+
+
+class Horse :
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+    def get_adopted(self,owner_name):   
+        self.owner_name = owner_name 
+    def rename(self,new_name):
+        old_name = self.name
+        self.name = new_name
+        print(f"{old_name} is now called {new_name}")
+    def celebrate_birthday(self):   
+        self.age += 1
+        print(f"Happy birthday,{self.name}! You are now {self.age} years old!") 
+max = Horse("Max", 10)
+max.get_adopted("Sophie")
+max.rename("Peter")
+max.celebrate_birthday()
+
+
+
+
+
+
+
+
+class Pig:
+    def __init__(self,name, favorite_toy = "Any"):
+        self.name = name
+        self.favorite_toy = favorite_toy
+molly = Pig("Molly")
+result = molly.favorite_toy
+print(result)
+
+
+
+
+class Bird :
+    def __init__(self,name,water = "Fiji water"):
+        
+        self.name =name
+        self.water = water
+tom = Bird("Tom")
+print(tom.water)
